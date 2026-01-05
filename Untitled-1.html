@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru Muda Inspiratif</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .teacher-card {
+            transition: all 0.3s ease;
+        }
+        
+        .teacher-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+        }
+        
+        .profile-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .profile-btn:hover {
+            transform: translateX(4px);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-on-scroll {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div class="w-full h-full overflow-auto" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+   <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto"><!-- Header Section -->
+     <div class="text-center mb-16 animate-on-scroll">
+      <h1 id="section-title" class="text-5xl font-bold mb-4" style="color: #ffffff;">Guru Muda Inspiratif</h1>
+      <p id="section-subtitle" class="text-xl max-w-3xl mx-auto" style="color: #e0e7ff;">Energi muda, kreatif, dan berdedikasi untuk mendidik generasi masa depan.</p>
+     </div><!-- Teacher Cards Grid -->
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"><!-- Teacher Card 1 -->
+      <div class="teacher-card rounded-2xl overflow-hidden animate-on-scroll delay-1" style="background: #ffffff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+       <div class="relative" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 280px;">
+        <svg viewbox="0 0 200 280" class="w-full h-full"><!-- Female teacher illustration --> <circle cx="100" cy="90" r="35" fill="#FFE4C4" /> <path d="M 70 85 Q 70 70 85 70 Q 100 65 115 70 Q 130 70 130 85 L 130 95 Q 130 110 100 110 Q 70 110 70 95 Z" fill="#2C1810" /> <ellipse cx="88" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <ellipse cx="112" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <path d="M 95 98 Q 100 102 105 98" stroke="#d4756a" stroke-width="2" fill="none" stroke-linecap="round" /> <rect x="70" y="120" width="60" height="80" rx="8" fill="#3B82F6" /> <path d="M 70 130 L 60 160 L 70 180" fill="#3B82F6" /> <path d="M 130 130 L 140 160 L 130 180" fill="#3B82F6" /> <circle cx="100" cy="145" r="12" fill="#ffffff" opacity="0.3" /> <path d="M 85 200 L 85 250 M 115 200 L 115 250" stroke="#2C5282" stroke-width="12" stroke-linecap="round" /> <rect x="78" y="250" width="16" height="8" rx="4" fill="#1f2937" /> <rect x="108" y="250" width="16" height="8" rx="4" fill="#1f2937" />
+        </svg>
+       </div>
+       <div class="p-6">
+        <h3 id="teacher-1-name" class="text-xl font-bold mb-2" style="color: #1e3a8a;">Nadia Putri Lestari, S.Pd</h3>
+        <p id="teacher-1-subject" class="font-semibold mb-3" style="color: #3b82f6;">Bahasa Inggris</p>
+        <p id="teacher-1-tagline" class="text-sm mb-4" style="color: #64748b;">"Membuka dunia melalui bahasa"</p><button class="profile-btn w-full py-2 px-4 rounded-lg font-medium text-sm" style="background: #3b82f6; color: #ffffff;"> <span id="button-text-1">Profil Lengkap →</span> </button>
+       </div>
+      </div><!-- Teacher Card 2 -->
+      <div class="teacher-card rounded-2xl overflow-hidden animate-on-scroll delay-2" style="background: #ffffff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+       <div class="relative" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 280px;">
+        <svg viewbox="0 0 200 280" class="w-full h-full"><!-- Male teacher illustration --> <circle cx="100" cy="90" r="35" fill="#F4C2A5" /> <path d="M 75 75 Q 75 65 90 68 Q 100 65 110 68 Q 125 65 125 75 L 125 90 Q 125 100 100 100 Q 75 100 75 90 Z" fill="#1a1a1a" /> <ellipse cx="88" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <ellipse cx="112" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <path d="M 95 98 Q 100 102 105 98" stroke="#d4756a" stroke-width="2" fill="none" stroke-linecap="round" /> <rect x="75" y="120" width="50" height="75" rx="6" fill="#1e3a8a" /> <rect x="95" y="130" width="10" height="60" fill="#ffffff" opacity="0.2" /> <path d="M 75 130 L 65 160 L 75 180" fill="#1e3a8a" /> <path d="M 125 130 L 135 160 L 125 180" fill="#1e3a8a" /> <path d="M 85 195 L 85 250 M 115 195 L 115 250" stroke="#1f2937" stroke-width="12" stroke-linecap="round" /> <rect x="78" y="250" width="16" height="8" rx="4" fill="#1f2937" /> <rect x="108" y="250" width="16" height="8" rx="4" fill="#1f2937" />
+        </svg>
+       </div>
+       <div class="p-6">
+        <h3 id="teacher-2-name" class="text-xl font-bold mb-2" style="color: #1e3a8a;">Ahmad Rizki Pratama, S.Kom</h3>
+        <p id="teacher-2-subject" class="font-semibold mb-3" style="color: #3b82f6;">Pemrograman Web</p>
+        <p id="teacher-2-tagline" class="text-sm mb-4" style="color: #64748b;">"Coding adalah seni masa depan"</p><button class="profile-btn w-full py-2 px-4 rounded-lg font-medium text-sm" style="background: #3b82f6; color: #ffffff;"> <span id="button-text-2">Profil Lengkap →</span> </button>
+       </div>
+      </div><!-- Teacher Card 3 -->
+      <div class="teacher-card rounded-2xl overflow-hidden animate-on-scroll delay-3" style="background: #ffffff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+       <div class="relative" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 280px;">
+        <svg viewbox="0 0 200 280" class="w-full h-full"><!-- Female teacher illustration --> <circle cx="100" cy="90" r="35" fill="#F4D0A8" /> <path d="M 70 80 Q 70 68 80 70 L 100 65 L 120 70 Q 130 68 130 80 L 130 100 Q 130 115 100 115 Q 70 115 70 100 Z" fill="#3a1f0d" /> <ellipse cx="88" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <ellipse cx="112" cy="88" rx="3" ry="4" fill="#1a1a1a" /> <path d="M 95 98 Q 100 102 105 98" stroke="#d4756a" stroke-width="2" fill="none" stroke-linecap="round" /> <rect x="70" y="120" width="60" height="80" rx="8" fill="#ec4899" /> <circle cx="100" cy="150" r="8" fill="#ffffff" opacity="0.3" /> <path d="M 70 130 L 55 160 L 70 180" fill="#ec4899" /> <path d="M 130 130 L 145 160 L 130 180" fill="#ec4899" /> <path d="M 85 200 L 85 250 M 115 200 L 115 250" stroke="#4b5563" stroke-width="12" stroke-linecap="round" /> <rect x="78" y="250" width="16" height="8" rx="4" fill="#1f2937" /> <rect x="108" y="250" width="16" height="8" rx="4" fill="#1f2937" />
+        </svg>
+       </div>
+       <div class="p-6">
+        <h3 id="teacher-3-name" class="text-xl font-bold mb-2" style="color: #1e3a8a;">Siti Nurhaliza, S.Pd</h3>
+        <p id="teacher-3-subject" class="font-semibold mb-3" style="color: #3b82f6;">Matematika</p>
+        <p id="teacher-3-tagline" class="text-sm mb-4" style="color: #64748b;">"Matematika itu mudah dan menyenangkan"</p><button class="profile-btn w-full py-2 px-4 rounded-lg font-medium text-sm" style="background: #3b82f6; color: #ffffff;"> <span id="button-text-3">Profil Lengkap →</span> </button>
+       </div>
+      </div><!-- Teacher Card 4 -->
+      <div class="teacher-card rounded-2xl overflow-hidden animate-on-scroll delay-4" style="background: #ffffff; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+       <div class="relative" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 280px;">
+        <svg viewbox="0 0 200 280" class="w-full h-full"><!-- Male teacher illustration with glasses --> <circle cx="100" cy="90" r="35" fill="#F4C2A5" /> <path d="M 72 72 Q 72 60 88 65 Q 100 60 112 65 Q 128 60 128 72 L 128 88 Q 128 98 100 98 Q 72 98 72 88 Z" fill="#1a1a1a" /> <!-- Glasses --> <circle cx="88" cy="88" r="8" fill="none" stroke="#1f2937" stroke-width="2" /> <circle cx="112" cy="88" r="8" fill="none" stroke="#1f2937" stroke-width="2" /> <line x1="96" y1="88" x2="104" y2="88" stroke="#1f2937" stroke-width="2" /> <ellipse cx="88" cy="88" rx="2" ry="3" fill="#1a1a1a" /> <ellipse cx="112" cy="88" rx="2" ry="3" fill="#1a1a1a" /> <path d="M 95 98 Q 100 102 105 98" stroke="#d4756a" stroke-width="2" fill="none" stroke-linecap="round" /> <rect x="75" y="120" width="50" height="75" rx="6" fill="#10b981" /> <path d="M 75 130 L 65 160 L 75 180" fill="#10b981" /> <path d="M 125 130 L 135 160 L 125 180" fill="#10b981" /> <path d="M 85 195 L 85 250 M 115 195 L 115 250" stroke="#374151" stroke-width="12" stroke-linecap="round" /> <rect x="78" y="250" width="16" height="8" rx="4" fill="#1f2937" /> <rect x="108" y="250" width="16" height="8" rx="4" fill="#1f2937" />
+        </svg>
+       </div>
+       <div class="p-6">
+        <h3 id="teacher-4-name" class="text-xl font-bold mb-2" style="color: #1e3a8a;">Budi Santoso, S.Si</h3>
+        <p id="teacher-4-subject" class="font-semibold mb-3" style="color: #3b82f6;">Fisika</p>
+        <p id="teacher-4-tagline" class="text-sm mb-4" style="color: #64748b;">"Memahami alam semesta lewat eksperimen"</p><button class="profile-btn w-full py-2 px-4 rounded-lg font-medium text-sm" style="background: #3b82f6; color: #ffffff;"> <span id="button-text-4">Profil Lengkap →</span> </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  <script>
+        const defaultConfig = {
+            background_color: "#667eea",
+            card_background: "#ffffff",
+            primary_text_color: "#1e3a8a",
+            secondary_text_color: "#3b82f6",
+            body_text_color: "#64748b",
+            button_color: "#3b82f6",
+            font_family: "Poppins",
+            font_size: 16,
+            section_title: "Guru Muda Inspiratif",
+            section_subtitle: "Energi muda, kreatif, dan berdedikasi untuk mendidik generasi masa depan.",
+            teacher_1_name: "Nadia Putri Lestari, S.Pd",
+            teacher_1_subject: "Bahasa Inggris",
+            teacher_1_tagline: '"Membuka dunia melalui bahasa"',
+            teacher_2_name: "Ahmad Rizki Pratama, S.Kom",
+            teacher_2_subject: "Pemrograman Web",
+            teacher_2_tagline: '"Coding adalah seni masa depan"',
+            teacher_3_name: "Siti Nurhaliza, S.Pd",
+            teacher_3_subject: "Matematika",
+            teacher_3_tagline: '"Matematika itu mudah dan menyenangkan"',
+            teacher_4_name: "Budi Santoso, S.Si",
+            teacher_4_subject: "Fisika",
+            teacher_4_tagline: '"Memahami alam semesta lewat eksperimen"',
+            button_text: "Profil Lengkap →"
+        };
+
+        async function onConfigChange(config) {
+            const baseFont = config.font_family || defaultConfig.font_family;
+            const baseFontStack = 'system-ui, sans-serif';
+            const fontSize = config.font_size || defaultConfig.font_size;
+
+            // Apply font family
+            document.body.style.fontFamily = `${baseFont}, ${baseFontStack}`;
+
+            // Apply colors
+            const mainSection = document.querySelector('section').parentElement;
+            mainSection.style.background = `linear-gradient(135deg, ${config.background_color || defaultConfig.background_color} 0%, #764ba2 100%)`;
+
+            // Update text content
+            document.getElementById('section-title').textContent = config.section_title || defaultConfig.section_title;
+            document.getElementById('section-subtitle').textContent = config.section_subtitle || defaultConfig.section_subtitle;
+
+            // Update font sizes
+            document.getElementById('section-title').style.fontSize = `${fontSize * 3}px`;
+            document.getElementById('section-subtitle').style.fontSize = `${fontSize * 1.25}px`;
+
+            // Update teacher cards
+            document.getElementById('teacher-1-name').textContent = config.teacher_1_name || defaultConfig.teacher_1_name;
+            document.getElementById('teacher-1-subject').textContent = config.teacher_1_subject || defaultConfig.teacher_1_subject;
+            document.getElementById('teacher-1-tagline').textContent = config.teacher_1_tagline || defaultConfig.teacher_1_tagline;
+
+            document.getElementById('teacher-2-name').textContent = config.teacher_2_name || defaultConfig.teacher_2_name;
+            document.getElementById('teacher-2-subject').textContent = config.teacher_2_subject || defaultConfig.teacher_2_subject;
+            document.getElementById('teacher-2-tagline').textContent = config.teacher_2_tagline || defaultConfig.teacher_2_tagline;
+
+            document.getElementById('teacher-3-name').textContent = config.teacher_3_name || defaultConfig.teacher_3_name;
+            document.getElementById('teacher-3-subject').textContent = config.teacher_3_subject || defaultConfig.teacher_3_subject;
+            document.getElementById('teacher-3-tagline').textContent = config.teacher_3_tagline || defaultConfig.teacher_3_tagline;
+
+            document.getElementById('teacher-4-name').textContent = config.teacher_4_name || defaultConfig.teacher_4_name;
+            document.getElementById('teacher-4-subject').textContent = config.teacher_4_subject || defaultConfig.teacher_4_subject;
+            document.getElementById('teacher-4-tagline').textContent = config.teacher_4_tagline || defaultConfig.teacher_4_tagline;
+
+            // Update button text
+            const buttonTexts = ['button-text-1', 'button-text-2', 'button-text-3', 'button-text-4'];
+            buttonTexts.forEach(id => {
+                document.getElementById(id).textContent = config.button_text || defaultConfig.button_text;
+            });
+
+            // Apply colors to text elements
+            const cards = document.querySelectorAll('.teacher-card');
+            cards.forEach(card => {
+                card.style.background = config.card_background || defaultConfig.card_background;
+                const title = card.querySelector('h3');
+                const subject = card.querySelector('p:nth-of-type(1)');
+                const tagline = card.querySelector('p:nth-of-type(2)');
+                const button = card.querySelector('button');
+
+                if (title) {
+                    title.style.color = config.primary_text_color || defaultConfig.primary_text_color;
+                    title.style.fontSize = `${fontSize * 1.25}px`;
+                }
+                if (subject) {
+                    subject.style.color = config.secondary_text_color || defaultConfig.secondary_text_color;
+                    subject.style.fontSize = `${fontSize}px`;
+                }
+                if (tagline) {
+                    tagline.style.color = config.body_text_color || defaultConfig.body_text_color;
+                    tagline.style.fontSize = `${fontSize * 0.875}px`;
+                }
+                if (button) {
+                    button.style.background = config.button_color || defaultConfig.button_color;
+                    button.style.fontSize = `${fontSize * 0.875}px`;
+                }
+            });
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig: defaultConfig,
+                onConfigChange: onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [
+                        {
+                            get: () => config.background_color || defaultConfig.background_color,
+                            set: (value) => {
+                                config.background_color = value;
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.card_background || defaultConfig.card_background,
+                            set: (value) => {
+                                config.card_background = value;
+                                window.elementSdk.setConfig({ card_background: value });
+                            }
+                        },
+                        {
+                            get: () => config.primary_text_color || defaultConfig.primary_text_color,
+                            set: (value) => {
+                                config.primary_text_color = value;
+                                window.elementSdk.setConfig({ primary_text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.secondary_text_color || defaultConfig.secondary_text_color,
+                            set: (value) => {
+                                config.secondary_text_color = value;
+                                window.elementSdk.setConfig({ secondary_text_color: value });
+                            }
+                        },
+                        {
+                            get: () => config.button_color || defaultConfig.button_color,
+                            set: (value) => {
+                                config.button_color = value;
+                                window.elementSdk.setConfig({ button_color: value });
+                            }
+                        }
+                    ],
+                    borderables: [],
+                    fontEditable: {
+                        get: () => config.font_family || defaultConfig.font_family,
+                        set: (value) => {
+                            config.font_family = value;
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    },
+                    fontSizeable: {
+                        get: () => config.font_size || defaultConfig.font_size,
+                        set: (value) => {
+                            config.font_size = value;
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["section_title", config.section_title || defaultConfig.section_title],
+                    ["section_subtitle", config.section_subtitle || defaultConfig.section_subtitle],
+                    ["teacher_1_name", config.teacher_1_name || defaultConfig.teacher_1_name],
+                    ["teacher_1_subject", config.teacher_1_subject || defaultConfig.teacher_1_subject],
+                    ["teacher_1_tagline", config.teacher_1_tagline || defaultConfig.teacher_1_tagline],
+                    ["teacher_2_name", config.teacher_2_name || defaultConfig.teacher_2_name],
+                    ["teacher_2_subject", config.teacher_2_subject || defaultConfig.teacher_2_subject],
+                    ["teacher_2_tagline", config.teacher_2_tagline || defaultConfig.teacher_2_tagline],
+                    ["teacher_3_name", config.teacher_3_name || defaultConfig.teacher_3_name],
+                    ["teacher_3_subject", config.teacher_3_subject || defaultConfig.teacher_3_subject],
+                    ["teacher_3_tagline", config.teacher_3_tagline || defaultConfig.teacher_3_tagline],
+                    ["teacher_4_name", config.teacher_4_name || defaultConfig.teacher_4_name],
+                    ["teacher_4_subject", config.teacher_4_subject || defaultConfig.teacher_4_subject],
+                    ["teacher_4_tagline", config.teacher_4_tagline || defaultConfig.teacher_4_tagline],
+                    ["button_text", config.button_text || defaultConfig.button_text]
+                ])
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b407245143862b7',t:'MTc2Njc1MDcyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
